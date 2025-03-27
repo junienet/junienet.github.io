@@ -29,6 +29,10 @@ body {
 .content a {
   text-decoration: underline;
 }
+.content li {
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+}
 
 a {
   color: purple;

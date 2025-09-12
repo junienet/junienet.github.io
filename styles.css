@@ -7,8 +7,8 @@
   src: url("IBMPlexMono-Regular.woff2");
 }
 @font-face {
-  font-family: Figtree;
-  src: url("Figtree-Medium.woff2");
+  font-family: Oranienbaum;
+  src: url("Oranienbaum-Regular.ttf");
 }
 body {
   font-family: "IBM Plex Sans", Inter, sans-serif;
@@ -19,22 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Figtree;
-}
-h1,
-h2 {
-  transition: 0.2s;
-  padding: 8px;
-  display: table;
-  border-radius: 12px;
-  background-color: #fbeefb;
-}
-h2 {
-  background-color: #fceffc;
-}
-h1:hover,
-h2:hover {
-  border-radius: 8px;
+  font-family: Oranienbaum, serif;
 }
 .header {
   height: 1.6em;
@@ -42,7 +27,7 @@ h2:hover {
 }
 .sidebar {
   margin: 1.5em 1em 0 0;
-  width: 12em;
+  width: 14em;
   clear: left;
   float: left;
   border-right: 1px solid black;
@@ -56,15 +41,13 @@ h2:hover {
   margin: 0 0 0.5em 0;
 }
 .content {
-  margin: 0 0 0 13em;
+  margin: 0 0 0 15em;
 }
 .content p {
   line-height: 1.5em;
 }
 .content a {
   text-decoration: underline;
-  background-color: #fff5ff;
-  border-radius: 8px;
 }
 .content li {
   line-height: 1.5em;
@@ -84,7 +67,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #151115;
+    background-color: #111;
     color: #efefef;
   }
   .sidebar {
@@ -101,13 +84,6 @@ a:hover {
   }
   a:hover {
     color: magenta;
-  }
-  h1,
-  h2 {
-    background-color: #301025;
-  }
-  .content a {
-    background-color: #200510;
   }
 }
 
@@ -126,7 +102,7 @@ a:hover {
   }
   @media (prefers-color-scheme: dark) {
     .header {
-      background-color: #111511;
+      background-color: #111;
     }
   }
   .sidebar {

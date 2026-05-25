@@ -67,16 +67,16 @@ h6 {
 }
 
 a {
-  color: midnightblue;
+  color: darkcyan;
   text-decoration: none;
 }
 
 a:visited {
-  color: midnightblue;
+  color: darkcyan;
 }
 
 a:hover {
-  color: cornflowerblue;
+  color: darkturquoise;
 }
 
 @media (prefers-color-scheme: dark) {

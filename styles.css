@@ -109,12 +109,12 @@ a:hover {
 @media (max-width: 800px) {
   .header {
     position: fixed;
-    top: 84vh;
+    top: 1vh;
     width: 96vw;
     height: 3vh;
     background-color: white;
-    border-bottom: 0;
-    border-top: 1px solid;
+    border-top: 0;
+    border-bottom: 1px solid;
   }
 
   .content {

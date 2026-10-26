@@ -27,9 +27,12 @@ h6 {
 }
 
 .header {
+  width: 100%;
   height: 1.6em;
   border-bottom: 1px solid black;
+  display: flex;
 }
+
 
 .sidebar {
   margin: 1.5em 1em 0 0;
@@ -115,6 +118,7 @@ a:hover {
     background-color: white;
     border-top: 0;
     border-bottom: 1px solid;
+    justify-content: space-evenly;
   }
 
   .content {

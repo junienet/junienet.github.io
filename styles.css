@@ -15,6 +15,10 @@
 
 body {
   font-family: "IBM Plex Sans", Inter, sans-serif;
+  width: 60vw;
+  margin: auto;
+  background-color: #fffaf2;
+  color: #420;
 }
 
 h1,
@@ -28,17 +32,23 @@ h6 {
 
 .header {
   width: 100%;
-  height: 1.6em;
+  height: 2.0em;
+  margin-top: 1.0em;
   border-bottom: 1px solid black;
   display: flex;
+  justify-content: start;
+  gap: 1.2em;
 }
 
 
+
 .sidebar {
-  margin: 1.5em 1em 0 0;
+  margin: 1.5em 0 0 0;
   width: 14em;
   clear: left;
   float: left;
+  top: 4.2em;
+  position: sticky;
   border-right: 1px solid black;
 }
 
@@ -57,7 +67,7 @@ h6 {
 }
 
 .content p {
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .content a {
@@ -110,32 +120,41 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-  .header {
-    position: fixed;
-    top: 1vh;
+  body {
     width: 96vw;
-    height: 3vh;
-    background-color: white;
+  }
+  .header {
+    position: sticky;
+    top:0;
+    margin: auto;
+    width: 96vw;
+    height: 4vh;
+    background-color: inherit;
     border-top: 0;
     border-bottom: 1px solid;
+    align-items: center;
     justify-content: space-evenly;
+    gap: 0;
+    z-index: 1;
   }
 
   .content {
-    margin: 0 0 24vh 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .header {
-      background-color: #111;
-    }
+    margin: 0 0 0 0;
   }
 
   .sidebar {
     width: 100%;
     border-right: 0;
     border-bottom: 1px solid;
-    margin-top: 0;
+    margin-top: 1.5em;
     margin-bottom: 1.5em;
+    position: static;
+    z-index: 0;
   }
+  @media (prefers-color-scheme: dark) {
+    .header {
+      background-color: #111;
+    }
+  }
+
 }

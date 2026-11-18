@@ -15,6 +15,6 @@ So what have I been up to you may be asking? I finished 2 semesters of universit
 
 Just recently I sold off my old ThinkPad to buy a new ThinkPad since I need a battery-efficient laptop to last a whole workday unplugged.
 
-Currently I'm trying a new hairstyle as my girlfriend has given me bangs for my hair and I'm gonna embrace it to my fullest.
+Currently I'm trying a new hairstyle as my friend has given me bangs for my hair and I'm gonna embrace it to my fullest.
 
 That is all that I'm gonna say, expect more blogs to be published and more updates to the website!!!

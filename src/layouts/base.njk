@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/deco/styles.css" />
+  <link rel="icon" type="image/x-icon" href="/deco/favicon.ico" />
+    <title>{{ title }}</title>
+</head>
+
+<body>
+  <div class="header">
+    <b>junienet</b>
+    |
+    {% if page.url == "/" %}<b>home</b>{% else %}<a href="/">home</a>{% endif %}
+    |
+    {% if page.url == "/posts/" %}<b>posts</b>{% else %}<a href="/posts/">posts</a>{% endif %}
+    |
+    {% if page.url == "/stuff/" %}<b>stuff</b>{% else %}<a href="/stuff/">stuff</a>{% endif %}
+  </div>
+  <div class="sidebar">
+      {% if sidebar %}{% include sidebar %}{% endif %}
+      {% include "socials.njk" %}
+  </div>
+  <div class="content">
+      {{ content|safe }}
+  </div>
+</body>
+
+</html>

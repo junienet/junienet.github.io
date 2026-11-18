@@ -1,0 +1,24 @@
+{
+  "name": "11tyjunienet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junienet/junienet.github.io.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/junienet/junienet.github.io/issues"
+  },
+  "homepage": "https://github.com/junienet/junienet.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "markdown-it-footnote": "^4.0.0"
+  }
+}

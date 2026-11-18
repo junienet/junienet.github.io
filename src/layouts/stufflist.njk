@@ -1,0 +1,8 @@
+<b>stuff</b>
+<ul>
+  {% for stuff in collections.stuff | reverse %}
+  <li>
+    {% if stuff.url == page.url %}<b>{{ stuff.data.title }} ({{ stuff.date | date("yyyy-MM-dd") }})</b>{% else %}<a href="{{ stuff.url }}">{{ stuff.data.title }} ({{ stuff.date | date("yyyy-MM-dd") }})</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

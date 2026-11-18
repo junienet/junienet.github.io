@@ -16,7 +16,7 @@
     "url": "https://github.com/junienet/junienet.github.io/issues"
   },
   "scripts": {
-	"build-ghpages": "npx @11ty/eleventy --pathprefix=/junienet.github.io/",
+	"build-ghpages": "npx @11ty/eleventy --pathprefix=/junienet.github.io",
 }
   "homepage": "https://github.com/junienet/junienet.github.io#readme",
   "dependencies": {

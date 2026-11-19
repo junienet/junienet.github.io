@@ -13,6 +13,9 @@ export default function (eleventyConfig) {
       : DateTime.fromJSDate(new Date(value));
     return date.toFormat(format);
   });
+  eleventyConfig.addFilter("excerptText", (content, dataExcerpt) =>
+    excerptPlainText(content, dataExcerpt),
+  );
   return {
     markdownTemplateEngine: "njk",
     dir: {
@@ -22,10 +25,6 @@ export default function (eleventyConfig) {
       includes: "../layouts",
     },
   };
-
-  eleventyConfig.addFilter("excerptText", (content, dataExcerpt) =>
-    excerptPlainText(content, dataExcerpt),
-  );
 }
 
 // Post excerpt function

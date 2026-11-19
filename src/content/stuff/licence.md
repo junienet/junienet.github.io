@@ -1,6 +1,6 @@
 ---
 layout: stuff.njk
-title: WTFPL Licence
+title: WTFPL
 tags: stuff
 date: 2026-11-19
 ---

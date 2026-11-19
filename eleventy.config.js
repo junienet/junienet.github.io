@@ -22,6 +22,10 @@ export default function (eleventyConfig) {
       includes: "../layouts",
     },
   };
+
+  eleventyConfig.addFilter("excerptText", (content, dataExcerpt) =>
+    excerptPlainText(content, dataExcerpt),
+  );
 }
 
 // Post excerpt function
@@ -48,7 +52,23 @@ const extractExcerpt = (post) => {
     withoutHeadings
       .replace(/<[^>]*>/g, "")
       .trim()
-      .slice(0, 300) +
+      .slice(0, 200) +
     "...</p>"
+  );
+};
+
+const excerptPlainText = (content = "", dataExcerpt) => {
+  if (dataExcerpt) return dataExcerpt.trim().replace(/\s+/g, " ");
+
+  const markerIndex = content.indexOf("<!-- more -->");
+  const preview = markerIndex >= 0 ? content.slice(0, markerIndex) : content;
+
+  return (
+    preview
+      .replace(/<h[1-6]\b[^>]*>[\s\S]*?<\/h[1-6]>/gi, "")
+      .replace(/<[^>]*>/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 200) + "..."
   );
 };
